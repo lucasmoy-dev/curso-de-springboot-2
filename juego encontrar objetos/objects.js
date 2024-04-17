@@ -1,26 +1,19 @@
 let game = {
-    "picture": "images/background.jpeg",
+    "picture": "https://1.bp.blogspot.com/-Xi4ANRq3j54/Ud2lUu0gk0I/AAAAAAAABy8/cT1hUoZhrjg/s1600/Fiesta.jpg",
     "objects": [
         {
-            "name": "Farol",
-            "initX": 61,
-            "initY": 527,
-            "endX": 91,
-            "endY": 677,
+            "name": "Bandera",
+            "initX": 830,
+            "initY": 147,
+            "endX": 891,
+            "endY": 191,
         },
         {
-            "name": "Casa",
-            "initX": 72,
-            "initY": 459,
-            "endX": 126,
-            "endY": 523,
-        },
-        {
-            "name": "Puente",
-            "initX": 262,
-            "initY": 632,
-            "endX": 578,
-            "endY": 778,
+            "name": "Autito chocador",
+            "initX": 282,
+            "initY": 943,
+            "endX": 377,
+            "endY": 1010,
         }
     ]
 }

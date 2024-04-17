@@ -48,6 +48,7 @@ function onClickImgJuego(event) {
 }
 
 function encontroUnObjeto(clickX, clickY) {
+    console.log("Click X:" + clickX + " Click Y:" + clickY)
     for (let i = 0; i < game.objects.length; i++) {
         let objetoActual = game.objects[i];
         let estaDentroDelRangoX = objetoActual.initX < clickX 
