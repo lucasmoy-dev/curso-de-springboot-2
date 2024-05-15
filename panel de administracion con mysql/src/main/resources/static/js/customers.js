@@ -4,7 +4,16 @@ function init() {
 
 async function getCustomers() {
     let url = URL_SERVER + 'customer';
-    let response = await fetch(url);
+
+    let config = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': sessionStorage.token
+        }
+    }
+
+    let response = await fetch(url, config);
     let json = await response.json();
     return json;
     /*
@@ -48,10 +57,14 @@ async function onClickRemove(id) {
     if (!response) {
         return;
     }
-    
+
     let url = URL_SERVER + 'customer/' + id;
     let config = {
-        method: 'DELETE'
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': sessionStorage.token
+        }
     };
 
     await fetch(url, config);
